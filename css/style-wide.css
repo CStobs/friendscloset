@@ -1,0 +1,55 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select {
+		font-size: 17pt;
+	}
+	
+	/* Main */
+		
+		.main {
+		}
+		
+			.main.style2 {
+			}
+			
+				.main.style2 .content {
+					width: 40%;
+				}
+			
+					.main.style2.right .content {
+						left: 60%;
+					}
+
+				.main.style2.inactive {
+				}
+
+					.main.style2.inactive .content {
+					}
+
+						.main.style2.inactive.left .content {
+							left: -40%;
+						}
+
+/*********************************************************************************/
+/* Carousel                                                                      */
+/*********************************************************************************/
+
+	.carousel
+	{
+		padding: 0.5em 0 0.5em 0;
+		margin-bottom: 10px;
+	}
+	
+		.carousel .reel
+		{
+			padding: 0 1.5em 0 1.5em;
+		}
+
+		.carousel article
+		{
+			height: 300px;
+			width: 15em;
+			margin: 0 4px 0 0;
+		}
