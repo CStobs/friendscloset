@@ -7,6 +7,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>recyked</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+    <postgresql.version>9.2-1003-jdbc4</postgresql.version>
+  </properties>
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,7 +20,23 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql.version}</version>            
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.2.3.Final</version>
+    </dependency>
+    <dependency>
+	<groupId>org.hibernate.common</groupId>
+	<artifactId>hibernate-commons-annotations</artifactId>
+	<version>4.0.1.Final</version>
+    </dependency>
   </dependencies>
+  
   <build>
     <plugins>
       <plugin>
@@ -28,4 +50,11 @@
       </plugin>
     </plugins>
   </build>
+  
+  <repositories>
+    <repository>
+      <id>JBoss repository</id>
+      <url>http://repository.jboss.com/maven2/</url>
+    </repository>
+  </repositories>
 </project>
